@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Patua+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoPlus!</title>
+</head>
+
+<body>
+	<div class="title">
+		<p class="top"> GoPlus!</p>
+		<p>Go have fun. Plus for 2048!</p>
+	</div>
+	<canvas id='cas'>
+	</canvas>
+	
+	<div class="container">
+		<div class="header clear-fixed">
+			<div class="score-panel">
+				<span class="left">SCORE: </span> <br> <span class="score" id="score">0</span>
+			</div>
+			<a class="tutorial right" href="tutorial.html">
+				<span class="score">Tutorial</span>
+			</a>
+
+		</div>
+
+		<div class="container-inner">
+			<canvas id="canvas" width="480" height="480"></canvas>
+			
+			<!-- Updated  -->
+			<div class="dog">
+				<img src="./Images/Dog1.gif" id='dog1' style="display: block;">
+				<img src="./Images/Dog2.gif" id='dog2' style="display: none;">
+				<img src="./Images/Dog3.gif" id='dog3' style="display: none;">
+				<img src="./Images/Dog4.gif" id='dog4' style="display: none;">
+				<img src="./Images/Dog5.gif" id='dog5' style="display: none;">
+				<img src="./Images/Dog6.gif" id='dog6' style="display: none;">
+			</div>
+		
+		</div>
+
+		<div id="game-over">
+			<div class="panel">
+				<h1 id="float_window" style="margin-top: 5px;"></h1>
+				<a class="tryagain" href="javascript:;" id="again" style="font-family: Arial;">Try Again</a>
+			</div>
+		</div>
+
+	</div>
+</body>
+<script src="game.js"></script>
+
+</html>

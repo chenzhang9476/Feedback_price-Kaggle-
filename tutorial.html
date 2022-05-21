@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Kirang+Haerang&family=Patua+One&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GoPlus!</title>
+</head>
+
+<body>
+	<div class="title">
+		<p class="top"> GoPlus!</p>
+		<p>Go have fun. Plus for 2048!</p>
+	</div>
+	<canvas id='cas'>
+	</canvas>
+	
+	<div class="container">
+		<div class="header clear-fixed">
+			<div class="score-panel">
+				<span class="left">SCORE: </span> <br> <span class="score" id="score">0</span>
+			</div>
+			<a class="return right" href="game.html">
+				<span class="score">Return</span>
+			</a>
+
+		</div>
+
+		<div class="container-inner">
+			<div id="canvas" style="margin-top: 19px;">
+				<img src="./Images/Tutorial.png">
+			</div>
+			
+			<div class="dog">
+				<img src="./Images/Dog1.gif">
+			</div>
+		
+		</div>
+
+	</div>
+</body>
+<script src="game.js"></script>
+<script src="spark.js"></script>
+<script src="sport.js"></script>
+</html>
